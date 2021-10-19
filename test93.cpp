@@ -1,0 +1,32 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+
+
+int main(){
+
+    vector<int> v;
+
+    for(int i=10;i>=0;--i){
+        v.push_back(i);
+    }
+
+    for(int i=0;i<v.size();++i){
+        cout<<v[i];
+    }
+
+    cout<<endl;
+
+    //I'm gonna sort this stuff
+
+    sort(v.begin()+4,v.end());
+
+    for(int i=0;i<v.size();++i){
+        cout<<v[i];
+    }
+
+
+    return 0;
+}
